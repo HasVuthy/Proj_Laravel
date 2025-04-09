@@ -13,4 +13,5 @@ Route::post('/employee/store',[EmployeeController::class, 'store'])->name('emplo
 Route::get('/employee/{employee}/edit',[EmployeeController::class , 'edit']) ->name('employee.edit');
 // update logical
 Route::put('/employee/{employee}/update',[EmployeeController::class ,'update']) ->name('employee.update');
+// delete function
 Route::delete('/employee/{employee}/destroy', [EmployeeController::class , 'destroy']) ->name('employee.destroy');
